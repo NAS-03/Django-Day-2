@@ -22,6 +22,6 @@ from courses.views import CourseView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView),
-    path('students/',StudentsView),
-    path('courses/',CourseView)
+    path('students/',StudentsView,name='students'),
+    path('courses/',CourseView,name='courses')
 ]
